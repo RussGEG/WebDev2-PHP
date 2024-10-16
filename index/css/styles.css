@@ -1,0 +1,253 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    backdrop-filter: blur(3px);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header { /* Changed to lowercase */
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 1030;
+    position: sticky;
+    width: 100%; /* Ensure the header spans the full width */
+    top: 0; /* Ensure it is positioned at the top */
+    background: #ffffff;
+    padding-bottom: 0px;
+}
+
+header::after { /* Changed to lowercase */
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    max-width: 15%;
+    height: auto;
+    padding-top: 10px; /* Remove the padding from here */
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #050505;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.499);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: all 4s ease;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+    padding-top: 8px;
+}
+@media (max-width: 1050px) {
+    Header {
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 800px) {
+    .bodyLogo {
+        width: 40%;
+        height: 40%;
+    }
+
+    .logo {
+        max-width: 25%;
+        padding-top: 10px;
+    }
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+        padding-top: 16%;
+    }
+}
+
+@media (max-width: 400px) {
+    .bodyLogo {
+        width: 70%;
+        height: auto;
+    }
+
+    .logo {
+        max-width: 30%;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .menu-button {
+        display: block;
+        padding-top: 12%;
+    }
+}
+
+.section1 {
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(Carwash.jpg);
+    backdrop-filter: blur(3px);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+content .bodyLogo {
+    width: 15%;
+    height: 15%;
+}
+
+content .table1 {
+    backdrop-filter: blur(10px);
+    text-align: center;
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+
+content .table1 h1 {
+    font-size: 35px;
+}
+
+content .table1 p {
+    font-size: 20px;
+}
+
+.section2 {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+
+.CardHeader {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 8px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+
+.card, .cardd, .carddd {
+    width: 360px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 70px;
+}
+
+.card img, .cardd img, .carddd img {
+    outline: auto #000;
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+footer {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(25, 25, 25);
+    min-height: 70px;
+    padding: -10px 50px;
+    padding-top: 30px;
+    z-index: 1030;
+}
+
+
+footer p{
+    color: #d4d4d4c9;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
